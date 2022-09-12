@@ -27,17 +27,28 @@
     justify-content: center;
 }
 
+.profile-content .profile-img-boxes div {
+    position: relative;
+}
+
 .profile-content .profile-img-boxes div img {
     border-radius: 5px;
     cursor: pointer;
+    display: block;
+    width: 100%;
 }
 
-/* .profile-img-hover {
-    position: relative;
+.profile-content .profile-img-boxes div:hover .profile-img-hover {
+    opacity: 1;
+}
+
+.profile-img-hover {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(26, 188, 156, 0.7);
-    z-index: 9999;
-} */
+    background-color: rgba(26, 188, 156, 0.8);
+    opacity: 0;
+    transition: .5s ease;
+}
