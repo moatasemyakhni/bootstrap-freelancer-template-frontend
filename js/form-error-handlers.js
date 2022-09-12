@@ -38,9 +38,13 @@ submitBtn.addEventListener('click', () => {
         return false
     }
     
-    // const invalidEmail = () => {
-    //     const mailformat = /^\w+([\.-]?\w+)+@\w+([\.-]?\w+)*(\.\w{2,3})+$/
-    // }
+    const invalidEmail = () => {
+        const exp = /^\w{3,}([\.-]?\w+)@\w{5,}([\.-]?\w+)(\.\w{2,3})+$/
+        if(!email.match(exp)) {
+            return true
+        }
+        return false
+    }
 
     const invalidPhone = () => {
         const exp1 = /^[+]9613\d{6}$/
@@ -65,6 +69,10 @@ submitBtn.addEventListener('click', () => {
     }
     if(shortName()) {
         setErrorMessage(`name should be at least ${nameLimit} chars`)
+        return
+    }
+    if(invalidEmail()) {
+        setErrorMessage(`${email} is invalid email`)
         return
     }
     if(invalidPhone()) {
