@@ -1,0 +1,38 @@
+.navbar{
+    height: 72px;
+    padding: 8px 0;
+    background-color: #212529;
+}
+
+.navbar .navbar-content {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .brand-name a {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .toggle-btn {
+    display: none;
+}
+
+.navbar .navbar-links > ul{
+    display: flex;
+    gap:30px;
+}
+
+.navbar .navbar-links > ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar .navbar-links > ul li:hover a {
+    color:#1abc9c;
+}

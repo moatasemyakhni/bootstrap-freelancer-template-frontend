@@ -5,3 +5,9 @@
     font-family: Arial, Helvetica, sans-serif;
     list-style: none;
 }
+
+/* utilities */
+.section {
+    width: 90%;
+    margin: 0 auto;
+}
