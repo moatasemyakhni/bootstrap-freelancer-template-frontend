@@ -82,6 +82,7 @@
         height: min-content;
         min-height: 43px;
         padding: 16px 0;
+        
     }
 
     .navbar .navbar-links {
@@ -104,6 +105,7 @@
         align-items: flex-start;
         gap: 10px;
         min-height: 43px;
+        justify-content: center;
     }
 
     .navbar .navbar-links > ul{
