@@ -90,3 +90,15 @@ img {
 .btn-submit-hover:hover {
     background-color: rgba(26, 188, 156, 1);
 }
+
+.btn-icon {
+    width: 52px;
+    height: 52px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.btn-icon-hover:hover {
+    background-color: #fff;
+}
