@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/profile-page-style.css">
     <link rel="stylesheet" href="styles/about-style.css">
     <link rel="stylesheet" href="styles/media-queries.css">
+    <link rel="stylesheet" href="styles/form-style.css">
 
     <script src="js/navbar-toggle.js" defer></script>
     <script src="js/profile-img-section-hover.js" defer></script>
@@ -58,7 +59,7 @@
     <main>
         <section class="profile-page">
             <div class="section profile-content">
-                <h2 class="title">PORTFOLIO</h2>
+                <h2 class="title indigo-color">PORTFOLIO</h2>
                 <div class="star-box star-box-center">
                     <div class="white-line bg-indigo-color"><span></span></div>
                     <div class="star-wrapper"><img src="images/indigo-star.png" alt="indigo star"></div>
@@ -122,5 +123,25 @@
             </div>
         </section>
     </main>
+
+    <footer>
+        <section class="form-section">
+            <div class="section">=
+                <h2 class="title indigo-color">CONTACT ME</h2>
+                <div class="star-box star-box-center">
+                    <div class="white-line bg-indigo-color"><span></span></div>
+                    <div class="star-wrapper"><img src="images/indigo-star.png" alt="indigo star"></div>
+                    <div class="white-line bg-indigo-color"><span></span></div>
+                </div>
+                <div class="form">
+                    <input type="text" name="name" class="form-input" placeholder="Full name" id="form-name">
+                    <input type="email" name="email" class="form-input" placeholder="Email address" id="form-email">
+                    <input type="text" name="phone" class="form-input" placeholder="Phone number" id="form-phone">
+                    <textarea name="message" class="form-input form-txt-area" placeholder="Message" cols="30" rows="10" id="form-message"></textarea>
+                    <input type="submit" class="btn btn-submit btn-submit-hover form-btn" value="Send">
+                </div>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
