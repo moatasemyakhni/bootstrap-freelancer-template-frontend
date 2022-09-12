@@ -1,5 +1,33 @@
 .profile-page {
 
-    padding-top: 96px;
+    padding: 96px 0;
 }
 
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.profile-content .profile-title {
+    font-size: 64px;
+    text-align: center;
+}
+
+.profile-content .star-box {
+    justify-content: center;
+}
+
+.profile-content .profile-img-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 289px;
+    row-gap: 48px;
+    column-gap: 32px;
+    justify-content: center;
+}
+
+.profile-content .profile-img-boxes div img {
+    border-radius: 5px;
+    cursor: pointer;
+}
