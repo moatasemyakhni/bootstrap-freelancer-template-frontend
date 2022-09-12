@@ -2,6 +2,7 @@
     height: 72px;
     padding: 8px 0;
     background-color: #212529;
+    text-transform: uppercase;
 }
 
 .navbar .navbar-content {
@@ -18,10 +19,6 @@
     text-decoration: none;
 }
 
-.navbar .toggle-btn {
-    display: none;
-}
-
 .navbar .navbar-links > ul{
     display: flex;
     gap:30px;
@@ -35,4 +32,37 @@
 
 .navbar .navbar-links > ul li:hover a {
     color:#1abc9c;
+}
+
+/* toggle btn */
+.navbar .toggle-btn {
+    display: block;
+    text-decoration: none;
+}
+
+.toggle-btn .toggle-btn-content {
+    display: flex;
+    background-color: #1abc9c;
+    padding: 12px;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: 500;
+    gap: 5px;
+}
+
+.hamburger {
+    display: flex;
+    margin: auto 0;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 12px;
+    width: 14px;
+
+}
+
+.hamburger span {
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #fff;
 }
