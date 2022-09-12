@@ -1,5 +1,5 @@
 .form-section {
-    padding: 96px 0;
+    padding-top: 96px;
 }
 
 .form {
@@ -28,4 +28,15 @@
 .form-btn {
     align-self: flex-start;
     margin-left: 15%;
+}
+
+/* error section */
+.error-section {
+    padding: 10px;
+    color: #c52030;
+    background-color: rgba(255, 125, 138, 0.4);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
