@@ -59,7 +59,7 @@
     }
     /* end navbar */
     /* start hero section */
-    .hero-content .hero-title {
+    .title {
         font-size: 44px;
     }
 
@@ -71,7 +71,7 @@
     
 
     /* start of profile page section */
-    .profile-content .profile-title {
+    .title {
         font-size: 44px;
     }
 

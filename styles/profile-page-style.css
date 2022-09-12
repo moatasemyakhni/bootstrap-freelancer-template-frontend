@@ -9,15 +9,6 @@
     align-content: center;
 }
 
-.profile-content .profile-title {
-    font-size: 64px;
-    text-align: center;
-}
-
-.profile-content .star-box {
-    justify-content: center;
-}
-
 .profile-content .profile-img-boxes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
