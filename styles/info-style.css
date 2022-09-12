@@ -36,3 +36,13 @@
 .info-link {
     color: #1abc9c;
 }
+
+/* copy right section */
+
+.cr-section {
+    background-color: #1a252f;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+}

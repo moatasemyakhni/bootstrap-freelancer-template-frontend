@@ -17,6 +17,10 @@
     border-bottom: 1px solid #ccc;
 }
 
+.form-input:focus {
+    border-bottom: 1px solid #1abc9c;
+}
+
 .form-txt-area {
     height: 90px;
 }
