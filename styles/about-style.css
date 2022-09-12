@@ -2,3 +2,21 @@
     background-color: #1abc9c;
     color: #fff;
 }
+
+.about-txt-wrapper {
+    display: flex;
+    gap: 24px;
+}
+
+.about-txt-wrapper .about-txt {
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.about-txt-wrapper .about-txt-left {
+    margin-left: 20%;
+}
+
+.about-txt-wrapper .about-txt-right {
+    margin-right: 20%;
+}
