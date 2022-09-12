@@ -39,7 +39,7 @@ submitBtn.addEventListener('click', () => {
     }
     
     const invalidEmail = () => {
-        const exp = /^\w{3,}([\.-]?\w+)@\w{5,}([\.-]?\w+)(\.\w{2,3})+$/
+        const exp = /^(\w([\.-]?\w)*){3,}@\w{5,}([\.-]?\w+)*(\.\w{2,3})+$/
         if(!email.match(exp)) {
             return true
         }
