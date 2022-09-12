@@ -15,3 +15,11 @@
 img {
     height: 100%;
 }
+
+.indigo-color {
+    color: #212529 !important;
+}
+
+.bg-indigo-color {
+    background-color: #212529 !important;
+}
