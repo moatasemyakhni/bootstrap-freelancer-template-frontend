@@ -102,3 +102,7 @@ img {
 .btn-icon-hover:hover {
     background-color: #fff;
 }
+
+.view-none {
+    display: none;
+}

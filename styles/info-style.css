@@ -37,8 +37,17 @@
     color: #1abc9c;
 }
 
+/* error section */
+.error-section {
+    padding: 10px;
+    color: #c52030;
+    background-color: rgba(255, 125, 138, 0.4);
+    font-size: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
 /* copy right section */
-
 .cr-section {
     background-color: #1a252f;
     color: #fff;
