@@ -47,9 +47,20 @@
         grid-auto-rows: 242px;
     }
     /* end of profile page section */
+
+    /* start of about section */
+    .about-txt-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-txt-wrapper .about-txt-left, .about-txt-wrapper .about-txt-right {
+        margin: 0;
+    }
+    /* end of about section */
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 360px) { /* phone */
     /* start navbar */
     .navbar .brand-name a {
         font-size: 20px;
@@ -71,10 +82,6 @@
     
 
     /* start of profile page section */
-    .title {
-        font-size: 44px;
-    }
-
     .profile-content .profile-img-boxes {
         grid-template-columns: 1fr;
         grid-auto-rows: 242px;
