@@ -1,6 +1,7 @@
 .about-section {
     background-color: #1abc9c;
     color: #fff;
+    padding: 96px 0;
 }
 
 .about-txt-wrapper {
@@ -19,4 +20,10 @@
 
 .about-txt-wrapper .about-txt-right {
     margin-right: 20%;
+}
+
+.about-btn-wrapper {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
 }
