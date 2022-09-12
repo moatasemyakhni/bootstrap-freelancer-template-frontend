@@ -58,6 +58,15 @@
         margin: 0;
     }
     /* end of about section */
+
+    /* start of form section */
+    .form-input {
+        width: 90%;
+    }
+    .form-btn {
+        margin-left: 5%;
+    }
+    /* end of form section */
 }
 
 @media only screen and (max-width: 360px) { /* phone */
