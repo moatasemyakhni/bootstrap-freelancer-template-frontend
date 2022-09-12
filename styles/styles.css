@@ -103,6 +103,6 @@ img {
     background-color: #fff;
 }
 
-.view-none {
-    display: none !important;
+.view-hidden {
+    visibility: hidden !important;
 }

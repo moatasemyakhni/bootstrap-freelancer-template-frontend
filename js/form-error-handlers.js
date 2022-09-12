@@ -5,8 +5,8 @@ const errorMessage = document.getElementById('error-txt')
 const formSection = document.querySelector('.form-section')
 
 const setErrorMessage = (error) => {
-    if(errorSection.classList.contains('view-none')) {
-        errorSection.classList.remove('view-none')
+    if(errorSection.classList.contains('view-hidden')) {
+        errorSection.classList.remove('view-hidden')
         formSection.style.paddingBottom = "0px"
     }
     errorMessage.textContent = error
@@ -59,10 +59,6 @@ submitBtn.addEventListener('click', () => {
         return false
     }
 
-    if(!errorSection.classList.contains('view-none')) {
-        errorSection.classList.add('view-none')
-        formSection.style.paddingBottom = "96px"
-    }
     if(emptyField()) {
         setErrorMessage('All fields are required')
         return
@@ -78,5 +74,9 @@ submitBtn.addEventListener('click', () => {
     if(shortMessage()) {
         setErrorMessage(`msg should be at least ${msgLimit} chars`)
         return
+    }
+    if(!errorSection.classList.contains('view-hidden')) {
+        errorSection.classList.add('view-hidden')
+        formSection.style.paddingBottom = "96px"
     }
 })
