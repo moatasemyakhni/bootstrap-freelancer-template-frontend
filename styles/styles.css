@@ -104,5 +104,5 @@ img {
 }
 
 .view-none {
-    display: none;
+    display: none !important;
 }
