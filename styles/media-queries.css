@@ -67,6 +67,16 @@
         margin-left: 5%;
     }
     /* end of form section */
+
+    /* start of info section */
+    .info-section .info-content {
+        flex-direction: column;
+    }
+
+    .info-section .info-content > div {
+       margin-bottom: 48px;
+    }
+    /* end of info section */
 }
 
 @media only screen and (max-width: 360px) { /* phone */
