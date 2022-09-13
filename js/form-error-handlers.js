@@ -87,4 +87,5 @@ submitBtn.addEventListener('click', () => {
         errorSection.classList.add('view-hidden')
         formSection.style.paddingBottom = "96px"
     }
+    
 })
