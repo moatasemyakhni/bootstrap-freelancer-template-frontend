@@ -1,7 +1,7 @@
 <?php
 include('dbh.php');
 
-$query = $mysqli->prepare("SELECT message FROM messages");
+$query = $mysqli->prepare("SELECT * FROM messages");
 $query->execute();
 $messages = $query->get_result();
 $response = [];
