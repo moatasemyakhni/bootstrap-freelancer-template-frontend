@@ -17,10 +17,10 @@ submitBtn.addEventListener('click', () => {
     const email = document.getElementById('form-email').value
     const phone = document.getElementById('form-phone').value
     const msg = document.getElementById('form-message').value
-    console.log(fullName)
-    console.log(email)
-    console.log(phone)
-    console.log(msg)
+    // console.log(fullName)
+    // console.log(email)
+    // console.log(phone)
+    // console.log(msg)
 
     const emptyField = () => {
         const isEmpty = str => !str.trim().length;
@@ -76,7 +76,7 @@ submitBtn.addEventListener('click', () => {
         return
     }
     if(invalidPhone()) {
-        setErrorMessage('phone number is Lebanese +9613xxxxxx or +9617(0 or 1 or 6 or 8)xxxxxxx')
+        setErrorMessage('phone number is Lebanese +9613xxxxxx or +9617(0 or 1 or 6 or 8)xxxxxx')
         return
     }
     if(shortMessage()) {
@@ -87,5 +87,33 @@ submitBtn.addEventListener('click', () => {
         errorSection.classList.add('view-hidden')
         formSection.style.paddingBottom = "96px"
     }
-    
+    const url = 'http://localhost/9-sefactory/bootstrap-freelancer-template-frontend/includes/insertMessages.php'
+
+     const data = {
+        "fullName": fullName,
+        "email": email,
+        "lebanesePhoneNumber": phone,
+        "message": msg
+    }
+    // console.log("ALL validations passed")
+    let res = postData(url, data)
+    // console.log("res", res)
+
+    document.getElementById('form-name').value = ""
+    document.getElementById('form-email').value = ""
+    document.getElementById('form-phone').value = ""
+    document.getElementById('form-message').value = ""
 })
+
+async function postData(url, data) {
+    const response = await fetch(url, {
+        method: "POST",
+        mode: "cors",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    })
+
+    return response.json()
+}

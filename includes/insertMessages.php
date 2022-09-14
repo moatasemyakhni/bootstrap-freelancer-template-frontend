@@ -1,10 +1,21 @@
 <?php
-if(isset($_POST['fullName']) && isset($_POST['email']) && isset($_POST['lebanesePhoneNumber']) && isset($_POST['messages'])) {
-    include('dbh.php');
-    $stmt = $mysqli->prepare("INSERT INTO messages(full_name, email, lebanese_phone_nb, message) VALUES(?, ?, ?, ?);");
-    $stmt->bind_param("ssss", $_POST['fullName'], $_POST['email'], $_POST['lebanesePhoneNumber'], $_POST['messages']);
-    $stmt->execute();
+include('dbh.php');
+header('Access-Control-Allow-Origin: *');//access by anybody with no auth
+header('Content-Type: application/json');
+header('Access-Control-Allow-Methods: POST');
+header('Allow-Control-Allow-Headers: Allow-Control-Allow-Headers, Content-Type, Access-Control-Allow-Methods, Authorization, X-Requested-With');
 
+
+$data = json_decode(file_get_contents("php://input"));//does not work with form-data
+$stmt = $mysqli->prepare("INSERT INTO messages(full_name, email, lebanese_phone_nb, message) VALUES(?, ?, ?, ?);");
+$stmt->bind_param("ssss", $data->fullName, $data->email, $data->lebanesePhoneNumber, $data->message);
+if($stmt->execute()) {
     $response = ["success" => true];
-    echo json_encode($response);
+}else {
+    $response = ["success" => false];
 }
+
+
+echo json_encode($response);
+
+
